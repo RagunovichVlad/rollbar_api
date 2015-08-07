@@ -1,7 +1,7 @@
 module RollbarAPI
   class Client
 
-    module Projects
+    module Items
 
       def get_item(item_id)
         self.class.get("/item/#{id}").parsed_response
