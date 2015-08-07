@@ -11,8 +11,8 @@ module RollbarAPI
         self.class.get("/team/#{team_id}/invites").parsed_response
       end
 
-      def invite_user_to_team(name,email)
-        self.class.post("/team/#{team_id}/invites").parsed_response
+      def invite_user_to_team(team_id,email)
+        self.class.post("/team/#{team_id}/invites", body: {email: email}).parsed_response
       end
 
       def cancel_invite(invite_id)
