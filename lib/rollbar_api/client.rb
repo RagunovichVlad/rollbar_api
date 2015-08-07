@@ -1,5 +1,6 @@
 require "rollbar_api/client/teams"
 require "rollbar_api/client/projects"
+require "rollbar_api/client/invites"
 
 module RollbarAPI
 
@@ -7,6 +8,7 @@ module RollbarAPI
     include HTTParty
     include RollbarAPI::Client::Teams
     include RollbarAPI::Client::Projects
+    include RollbarAPI::Client::Invites
 
     format :json
     base_uri 'https://api.rollbar.com/api/1'
