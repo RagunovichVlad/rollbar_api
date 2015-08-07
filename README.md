@@ -1,10 +1,10 @@
-# RollbarApi
+### Rollbar API ruby client library
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rollbar_api`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build Status](https://magnum.travis-ci.com/RagunovichVlad/rollbar_api.svg?token=sSGGAcKAtBywfMyZUSP2&branch=master)](https://magnum.travis-ci.com/RagunovichVlad/rollbar_api)
 
-TODO: Delete this and the text above, and describe your gem
+Client library for talking to [Rollbar API](https://rollbar.com/docs/api_overview/).
 
-## Installation
+#### Installation
 
 Add this line to your application's Gemfile:
 
@@ -20,22 +20,26 @@ Or install it yourself as:
 
     $ gem install rollbar_api
 
-## Usage
+#### Usage
 
-TODO: Write usage instructions here
+First of all, initialize client:
 
-## Development
+```ruby
+client = RollbarAPI::Client.new("MY_API_TOKEN")
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+And then talk to API:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```ruby
+client.create_project("rollbar_api")
+```
 
-## Contributing
+#### Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/rollbar_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/RagunovichVlad/rollbar_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 
-## License
+#### License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
