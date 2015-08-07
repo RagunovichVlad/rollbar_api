@@ -8,7 +8,7 @@ module RollbarAPI
       end
 
       def get_team(id)
-        self.class.get("/teams/#{id}").parsed_response
+        self.class.get("/team/#{id}").parsed_response
       end
 
       def create_team(name, access_level = 'standard')
