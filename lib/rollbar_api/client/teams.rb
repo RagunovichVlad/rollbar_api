@@ -39,7 +39,7 @@ module RollbarAPI
         self.class.get("/team/#{team_id}/users").parsed_response
       end
 
-      def remove_user_from_team
+      def remove_user_from_team(team_id, user_id)
         self.class.delete("/team/#{team_id}/user/#{user_id}").parsed_response
       end
     end
