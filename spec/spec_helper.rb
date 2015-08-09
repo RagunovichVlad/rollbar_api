@@ -1,2 +1,4 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'rollbar_api'
+require 'vcr'
+require 'support/vcr_setup'
