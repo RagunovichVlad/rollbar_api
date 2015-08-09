@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.rollbar.com/api/1/projects?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: name=test
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 09 Aug 2015 19:24:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '696'
+      Connection:
+      - keep-alive
+      X-Response-Time:
+      - 96ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "err": 0,
+          "result": {
+            "status": "enabled",
+            "name": "test",
+            "date_modified": 1439148297,
+            "account_id": 22929,
+            "date_created": 1439148297,
+            "id": 32330,
+            "settings_data": {
+              "fingerprint_versions": {
+                "browser.browser-js": 1
+              },
+              "integrations": {
+                "jira": {},
+                "bitbucket": {},
+                "github": {},
+                "trello": {},
+                "slack": {},
+                "webhook": {},
+                "asana": {},
+                "victorops": {},
+                "campfire": {},
+                "pivotal": {},
+                "flowdock": {},
+                "sprintly": {},
+                "pagerduty": {},
+                "hipchat": {},
+                "email": {
+                  "enabled": true
+                }
+              }
+            }
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 09 Aug 2015 19:24:58 GMT
+recorded_with: VCR 2.9.3

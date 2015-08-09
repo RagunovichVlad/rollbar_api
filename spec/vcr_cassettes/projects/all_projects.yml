@@ -1,0 +1,352 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rollbar.com/api/1/projects?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 09 Aug 2015 19:24:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Origin, Content-Type, Referrer, User-Agent, X-Rollbar-Access-Token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - W/"-2109565112"
+      X-Response-Time:
+      - 3ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "err": 0,
+          "result": [
+            {
+              "id": 32194,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1438942742,
+              "date_modified": 1438968649,
+              "name": null
+            },
+            {
+              "id": 32213,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1438955998,
+              "date_modified": 1438968621,
+              "name": null
+            },
+            {
+              "id": 32233,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1438968562,
+              "date_modified": 1438968632,
+              "name": null
+            },
+            {
+              "id": 32236,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1438969731,
+              "date_modified": 1439143012,
+              "name": null
+            },
+            {
+              "id": 32259,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1438985256,
+              "date_modified": 1439143003,
+              "name": null
+            },
+            {
+              "id": 32321,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1439140287,
+              "date_modified": 1439142997,
+              "name": null
+            },
+            {
+              "id": 32323,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1439143062,
+              "date_modified": 1439143181,
+              "name": null
+            },
+            {
+              "id": 32324,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1439143142,
+              "date_modified": 1439143270,
+              "name": null
+            },
+            {
+              "id": 32325,
+              "account_id": 22929,
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "webhook": {},
+                  "asana": {},
+                  "victorops": {},
+                  "campfire": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "pagerduty": {},
+                  "hipchat": {},
+                  "email": {}
+                }
+              },
+              "date_created": 1439143269,
+              "date_modified": 1439148146,
+              "name": null
+            },
+            {
+              "id": 32329,
+              "account_id": 22929,
+              "status": "enabled",
+              "settings_data": {
+                "fingerprint_versions": {
+                  "browser.browser-js": 1
+                },
+                "integrations": {
+                  "jira": {},
+                  "pagerduty": {},
+                  "bitbucket": {},
+                  "github": {},
+                  "trello": {},
+                  "slack": {},
+                  "campfire": {},
+                  "webhook": {},
+                  "victorops": {},
+                  "asana": {},
+                  "pivotal": {},
+                  "flowdock": {},
+                  "sprintly": {},
+                  "hipchat": {},
+                  "email": {
+                    "enabled": true
+                  }
+                }
+              },
+              "date_created": 1439148253,
+              "date_modified": 1439148253,
+              "name": "test1"
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Sun, 09 Aug 2015 19:24:57 GMT
+recorded_with: VCR 2.9.3

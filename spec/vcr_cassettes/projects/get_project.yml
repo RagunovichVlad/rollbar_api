@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rollbar.com/api/1/project/32329?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 09 Aug 2015 19:24:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '697'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Origin, Content-Type, Referrer, User-Agent, X-Rollbar-Access-Token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - '"248162397"'
+      X-Response-Time:
+      - 2ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "err": 0,
+          "result": {
+            "id": 32329,
+            "account_id": 22929,
+            "status": "enabled",
+            "settings_data": {
+              "fingerprint_versions": {
+                "browser.browser-js": 1
+              },
+              "integrations": {
+                "jira": {},
+                "pagerduty": {},
+                "bitbucket": {},
+                "github": {},
+                "trello": {},
+                "slack": {},
+                "campfire": {},
+                "webhook": {},
+                "victorops": {},
+                "asana": {},
+                "pivotal": {},
+                "flowdock": {},
+                "sprintly": {},
+                "hipchat": {},
+                "email": {
+                  "enabled": true
+                }
+              }
+            },
+            "date_created": 1439148253,
+            "date_modified": 1439148253,
+            "name": "test1"
+          }
+        }
+    http_version: 
+  recorded_at: Sun, 09 Aug 2015 19:24:57 GMT
+recorded_with: VCR 2.9.3
