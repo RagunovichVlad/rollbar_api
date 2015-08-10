@@ -4,7 +4,7 @@ module RollbarAPI
     module Items
 
       def get_item(item_id)
-        get("/item/#{id}")
+        get("/item/#{item_id}")
       end
 
       def item_by_counter(counter)
