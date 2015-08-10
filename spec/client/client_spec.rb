@@ -9,6 +9,7 @@ describe RollbarAPI::Client do
     end
 
     it "must include all classes" do
+      expect(RollbarAPI::Client).to include(RollbarAPI::Client::Connection)
       expect(RollbarAPI::Client).to include(RollbarAPI::Client::Teams)
       expect(RollbarAPI::Client).to include(RollbarAPI::Client::Projects)
       expect(RollbarAPI::Client).to include(RollbarAPI::Client::Invites)
