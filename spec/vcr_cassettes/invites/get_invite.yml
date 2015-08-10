@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rollbar.com/api/1/invite/17942?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 10 Aug 2015 10:43:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '215'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Origin, Content-Type, Referrer, User-Agent, X-Rollbar-Access-Token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - '"1473392447"'
+      X-Response-Time:
+      - 2ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "err": 0,
+          "result": {
+            "id": 17942,
+            "from_user_id": 5325,
+            "team_id": 26694,
+            "to_email": "test@email.com",
+            "status": "pending",
+            "date_created": 1439203386,
+            "date_redeemed": null
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 10:43:55 GMT
+recorded_with: VCR 2.9.3
