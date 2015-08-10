@@ -18,7 +18,7 @@ describe 'Projects API', vcr: true do
 
   it "must create new project" do
     VCR.use_cassette('projects/create_project') do
-      expect(client.create_project('test')['err']).to eql(0)
+      expect(client.create_project(name: 'test')['err']).to eql(0)
     end
   end
 

@@ -4,19 +4,19 @@ module RollbarAPI
     module Items
 
       def get_item(item_id)
-        self.class.get("/item/#{id}").parsed_response
+        get("/item/#{id}")
       end
 
       def item_by_counter(counter)
-        self.class.get("/item_by_counter/#{counter}").parsed_response
+        get("/item_by_counter/#{counter}")
       end
 
       def all_items
-        self.class.get('/items/')
+        get('/items/')
       end
 
-      def update_item(item_id, status, resolved_in_version)
-        self.class.patch("/item/#{item_id}", body: {status: status, resolved_in_version: resolved_in_version}).parsed_response
+      def update_item(item_id, options = {})
+        patch("/item/#{item_id}", body: options)
       end
     end
   end

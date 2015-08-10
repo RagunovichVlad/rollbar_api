@@ -1,3 +1,4 @@
+require "rollbar_api/client/connection"
 require "rollbar_api/client/teams"
 require "rollbar_api/client/projects"
 require "rollbar_api/client/invites"
@@ -7,6 +8,7 @@ module RollbarAPI
 
   class Client
     include HTTParty
+    include RollbarAPI::Client::Connection
     include RollbarAPI::Client::Teams
     include RollbarAPI::Client::Projects
     include RollbarAPI::Client::Invites

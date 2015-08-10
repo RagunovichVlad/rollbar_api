@@ -4,23 +4,23 @@ module RollbarAPI
     module Projects
 
       def all_projects
-        self.class.get('/projects').parsed_response
+        get('/projects')
       end
 
-      def get_project(id)
-        self.class.get("/project/#{id}").parsed_response
+      def get_project(project_id)
+        get("/project/#{project_id}")
       end
 
-      def create_project(name)
-        self.class.post('/projects', body: {name: name}).parsed_response
+      def create_project(options = {})
+        post('/projects', body: options)
       end
 
-      def delete_project(id)
-        self.class.delete("/project/#{id}").parsed_response
+      def delete_project(project_id)
+        delete("/project/#{project_id}")
       end
 
-      def update_project_access_tokens(id, window_count, window_size)
-        self.class.patch("/project/#{id}/access_tokens", body: {rate_limit_window_count: window_count, rate_limit_window_size: window_size}).parsed_response
+      def update_project_access_tokens(project_id, options = {})
+        patch("/project/#{project_id}/access_tokens", body: options)
       end
     end
   end

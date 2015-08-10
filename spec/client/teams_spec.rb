@@ -18,7 +18,7 @@ describe 'Teams API', vcr: true do
 
   it "create a team" do
     VCR.use_cassette('teams/create_team') do
-      expect(client.create_team('test')['err']).to eql(0)
+      expect(client.create_team(name: 'test')['err']).to eql(0)
     end
   end
 

@@ -4,23 +4,23 @@ module RollbarAPI
     module Invites
 
       def get_invite(invite_id)
-        self.class.get("/invite/#{invite_id}").parsed_response
+        get("/invite/#{invite_id}")
       end
 
       def invites_for_team(team_id)
-        self.class.get("/team/#{team_id}/invites").parsed_response
+        get("/team/#{team_id}/invites")
       end
 
-      def invite_user_to_team(team_id,email)
-        self.class.post("/team/#{team_id}/invites", body: {email: email}).parsed_response
+      def invite_user_to_team(team_id, options = {})
+        post("/team/#{team_id}/invites", body: options)
       end
 
       def cancel_invite(invite_id)
-        self.class.delete("/invite/#{invite_id}").parsed_response
+        delete("/invite/#{invite_id}")
       end
 
       def cancel_accepted_invite(team_id, user_id)
-        self.class.delete("/team/#{team_id}/user/#{user_id}").parsed_response
+        delete("/team/#{team_id}/user/#{user_id}")
       end
     end
   end
