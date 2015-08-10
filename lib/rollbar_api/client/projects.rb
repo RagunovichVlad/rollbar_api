@@ -19,8 +19,12 @@ module RollbarAPI
         delete("/project/#{project_id}")
       end
 
-      def update_project_access_tokens(project_id, options = {})
-        patch("/project/#{project_id}/access_tokens", body: options)
+      def project_access_tokens(project_id)
+        get("/project/#{project_id}/access_tokens")
+      end
+
+      def update_project_access_tokens(project_id, access_token, options = {})
+        patch("/project/#{project_id}/access_token/#{access_token}", body: options)
       end
     end
   end

@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rollbar.com/api/1/project/32329/access_tokens?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 10 Aug 2015 12:49:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Origin, Content-Type, Referrer, User-Agent, X-Rollbar-Access-Token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - W/"-980781937"
+      X-Response-Time:
+      - 3ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "err": 0,
+          "result": [
+            {
+              "project_id": 32329,
+              "access_token": "00690f187c30432db4a3b06208e914a8",
+              "name": "post_server_item",
+              "status": "enabled",
+              "rate_limit_window_size": null,
+              "rate_limit_window_count": null,
+              "cur_rate_limit_window_start": null,
+              "cur_rate_limit_window_count": null,
+              "date_created": 1439148253,
+              "date_modified": 1439148253,
+              "scopes": [
+                "post_server_item"
+              ]
+            },
+            {
+              "project_id": 32329,
+              "access_token": "4132e67319ea4656a51bf328b0e34120",
+              "name": "read",
+              "status": "enabled",
+              "rate_limit_window_size": null,
+              "rate_limit_window_count": null,
+              "cur_rate_limit_window_start": null,
+              "cur_rate_limit_window_count": null,
+              "date_created": 1439148253,
+              "date_modified": 1439148253,
+              "scopes": [
+                "read"
+              ]
+            },
+            {
+              "project_id": 32329,
+              "access_token": "4ffbf78eccd54e09919fa4ae9580d632",
+              "name": "post_client_item",
+              "status": "enabled",
+              "rate_limit_window_size": null,
+              "rate_limit_window_count": null,
+              "cur_rate_limit_window_start": null,
+              "cur_rate_limit_window_count": null,
+              "date_created": 1439148253,
+              "date_modified": 1439148253,
+              "scopes": [
+                "post_client_item"
+              ]
+            },
+            {
+              "project_id": 32329,
+              "access_token": "a66676973f2e4cac926a7d32979a3e9d",
+              "name": "write",
+              "status": "enabled",
+              "rate_limit_window_size": null,
+              "rate_limit_window_count": null,
+              "cur_rate_limit_window_start": null,
+              "cur_rate_limit_window_count": null,
+              "date_created": 1439148253,
+              "date_modified": 1439148253,
+              "scopes": [
+                "write"
+              ]
+            }
+          ]
+        }
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 12:49:34 GMT
+recorded_with: VCR 2.9.3

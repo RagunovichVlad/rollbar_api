@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://api.rollbar.com/api/1/project/32370/access_token/<PROJECT_ACCESS_TOKEN>?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: rate_limit_window_count=0&rate_limit_window_size=0
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 10 Aug 2015 12:55:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '14'
+      Connection:
+      - keep-alive
+      X-Response-Time:
+      - 68ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "err": 0
+        }
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 12:55:42 GMT
+recorded_with: VCR 2.9.3
