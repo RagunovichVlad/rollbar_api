@@ -35,6 +35,37 @@ And then talk to API:
 client.create_project("rollbar_api")
 ```
 
+#### List of all methods
+
+Client methods really just map 1 to 1 to API, see all of them beyond. Check API docs for list of available `options`.
+
+```ruby
+all_projects
+get_project(project_id)
+create_project(options = {})
+delete_project(project_id)
+update_project_access_tokens(project_id, options = {})
+all_teams
+get_team(team_id)
+create_team(options = {})
+delete_team(team_id)
+check_project_in_team(team_id, project_id)
+add_project_to_team(team_id, project_id)
+remove_project_from_team(team_id, project_id)
+check_team_membership(team_id, user_id)
+team_members(team_id)
+remove_user_from_team(team_id, user_id)
+get_invite(invite_id)
+invites_for_team(team_id)
+invite_user_to_team(team_id, options = {})
+cancel_invite(invite_id)
+cancel_accepted_invite(team_id, user_id)
+get_item(item_id)
+item_by_counter(counter)
+all_items
+update_item(item_id, options = {})
+```
+
 #### Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/RagunovichVlad/rollbar_api. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
