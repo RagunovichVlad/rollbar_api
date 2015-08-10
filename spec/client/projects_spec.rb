@@ -36,7 +36,7 @@ describe 'Projects API', vcr: true do
 
   it "update rate limits for a project access token" do
     VCR.use_cassette('projects/update_project_access_tokens') do
-      expect(client.update_project_access_tokens(32370, ENV['PROJECT_ACCESS_TOKEN'], {rate_limit_window_count: 0, rate_limit_window_size: 0})['err']).to eql(0)
+      expect(client.update_project_access_tokens(32382, ENV['PROJECT_ACCESS_TOKEN'], {rate_limit_window_count: 0, rate_limit_window_size: 0})['err']).to eql(0)
     end
   end
 end
