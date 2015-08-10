@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rollbar.com/api/1/items/?access_token=<PROJECT_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 10 Aug 2015 14:20:12 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1011'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Origin, Content-Type, Referrer, User-Agent, X-Rollbar-Access-Token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - '"-975605310"'
+      X-Response-Time:
+      - 91ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "err": 0,
+          "result": {
+            "items": [
+              {
+                "integrations_data": null,
+                "last_activated_timestamp": 1439215565,
+                "assigned_user_id": null,
+                "unique_occurrences": null,
+                "id": 344193591,
+                "environment": "development",
+                "title": "Test error from rollbar:test",
+                "last_occurrence_id": 7031134404,
+                "last_occurrence_timestamp": 1439215565,
+                "platform": "unknown",
+                "last_muted_timestamp": null,
+                "project_id": 32382,
+                "resolved_in_version": null,
+                "first_occurrence_timestamp": 1439215565,
+                "status": "active",
+                "hash": "77b8826279231b57d13539a61728837e2ca92fec",
+                "framework": "rails",
+                "total_occurrences": 1,
+                "level": "error",
+                "counter": 1,
+                "last_modified_by": 2147,
+                "first_occurrence_id": 7031134404,
+                "activating_occurrence_id": 7031134404,
+                "last_resolved_timestamp": null
+              }
+            ],
+            "page": 1,
+            "total_count": 1
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 14:20:12 GMT
+recorded_with: VCR 2.9.3

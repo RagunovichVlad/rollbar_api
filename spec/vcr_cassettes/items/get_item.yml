@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.rollbar.com/api/1/item/344193591?access_token=<PROJECT_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 10 Aug 2015 14:20:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '746'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - X-Requested-With, Origin, Content-Type, Referrer, User-Agent, X-Rollbar-Access-Token
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '86400'
+      Etag:
+      - '"-1155655538"'
+      X-Response-Time:
+      - 6ms
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "err": 0,
+          "result": {
+            "id": 344193591,
+            "project_id": 32382,
+            "counter": 1,
+            "environment": "development",
+            "platform": "unknown",
+            "framework": "rails",
+            "hash": "77b8826279231b57d13539a61728837e2ca92fec",
+            "title": "Test error from rollbar:test",
+            "first_occurrence_id": 7031134404,
+            "first_occurrence_timestamp": 1439215565,
+            "activating_occurrence_id": 7031134404,
+            "last_activated_timestamp": 1439215565,
+            "last_resolved_timestamp": null,
+            "last_muted_timestamp": null,
+            "last_occurrence_id": 7031134404,
+            "last_occurrence_timestamp": 1439215565,
+            "total_occurrences": 1,
+            "last_modified_by": 2147,
+            "status": "active",
+            "level": "error",
+            "integrations_data": null
+          }
+        }
+    http_version: 
+  recorded_at: Mon, 10 Aug 2015 14:20:11 GMT
+recorded_with: VCR 2.9.3
