@@ -1,6 +1,6 @@
 ## Rollbar API ruby client library
 
-[![Build Status](https://magnum.travis-ci.com/RagunovichVlad/rollbar_api.svg?token=sSGGAcKAtBywfMyZUSP2&branch=master)](https://magnum.travis-ci.com/RagunovichVlad/rollbar_api)
+[![Build Status](https://travis-ci.org/RagunovichVlad/rollbar_api.svg)](https://travis-ci.org/RagunovichVlad/rollbar_api)
 [![Test Coverage](https://codeclimate.com/repos/55c7b0666956804520006d34/badges/b2b37277e90562966c10/coverage.svg)](https://codeclimate.com/repos/55c7b0666956804520006d34/coverage)
 
 Client library for talking to [Rollbar API](https://rollbar.com/docs/api_overview/).
