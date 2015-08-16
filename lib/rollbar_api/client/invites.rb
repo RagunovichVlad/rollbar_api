@@ -22,6 +22,8 @@ module RollbarAPI
       def cancel_accepted_invite(team_id, user_id)
         delete("/team/#{team_id}/user/#{user_id}")
       end
+      
     end
+
   end
 end

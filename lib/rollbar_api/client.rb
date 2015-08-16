@@ -21,5 +21,6 @@ module RollbarAPI
     def initialize(access_token)
       self.class.default_options.merge!(query: {access_token: access_token})
     end
+    
   end
 end

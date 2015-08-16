@@ -42,6 +42,8 @@ module RollbarAPI
       def remove_user_from_team(team_id, user_id)
         delete("/team/#{team_id}/user/#{user_id}")
       end
+      
     end
+
   end
 end

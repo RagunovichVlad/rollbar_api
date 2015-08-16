@@ -18,6 +18,8 @@ module RollbarAPI
       def update_item(item_id, options = {})
         patch("/item/#{item_id}", body: options)
       end
+      
     end
+
   end
 end

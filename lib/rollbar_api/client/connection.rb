@@ -1,5 +1,4 @@
 module RollbarAPI
-
   class Client
 
     module Connection
@@ -26,10 +25,12 @@ module RollbarAPI
 
       private
 
-        def request(http_method, path, options)
-          response = self.class.send(http_method, path, options)
-          data = response.parsed_response
-        end
+      def request(http_method, path, options)
+        response = self.class.send(http_method, path, options)
+        data = response.parsed_response
+      end
+      
     end
+
   end
 end
